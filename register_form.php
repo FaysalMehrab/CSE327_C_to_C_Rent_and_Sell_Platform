@@ -11,7 +11,8 @@ if(isset($_POST['submit'])){
    $cpass = md5($_POST['cpassword']);
    $user_type = $_POST['user_type'];
 
-   $select = " SELECT * FROM user_admin_info WHERE email = '$email' && password = '$pass'";
+   
+   $select = " SELECT * FROM req_reg WHERE email = '$email' && password = '$pass'";
 
    $result = mysqli_query($conn, $select);
 
@@ -24,7 +25,8 @@ if(isset($_POST['submit'])){
       if($pass != $cpass){
          $error[] = 'password not matched!';
       }else{
-         $insert = "INSERT INTO user_admin_info(nid,name, email, password, user_type) VALUES('$nid','$name','$email','$pass','$user_type')";
+        
+          $insert = "INSERT INTO req_reg(nid,name, email, password, user_type) VALUES('$nid','$name','$email','$pass','$user_type')";
          mysqli_query($conn, $insert);
          header('location:login_form.php');
       }

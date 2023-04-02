@@ -25,7 +25,7 @@
 			
 			<h3>Hello <span><?php echo $_SESSION['user_name']?></span> </h3>
 			<p>This Is A User Page</p>
-			<a href="login_form.php" class="btn">Login</a>
+			<a href="User/Advertisement.php" class="btn">Advertisement</a>
 			<a href="logout_form.php" class="btn">Logout</a>
 			<a href="register_form.php" class="btn">Register</a>
 

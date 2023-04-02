@@ -35,7 +35,7 @@ if(isset($_POST['submit'])){
       }
      
    }else{
-      $error[] = 'incorrect email or password!';
+      $error[] = 'incorrect email or password! OR Your account is not Verified yet';
    }
 
 };
