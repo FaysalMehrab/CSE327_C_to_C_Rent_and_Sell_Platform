@@ -25,10 +25,16 @@
 		<div class="content">
 			
 			<h3>Hi <span><?php echo $_SESSION['admin_name']?></span> </h3>
-			<p>This Is An Admin Page</p>
-			<a href="login_form.php" class="btn">Login</a>
+			<p>Welcome to the Admin Dashboard</p>
+
+
+				<a href="Admin/Registration_request.php" class="btn">Registration Requests</a>
+				<a href="Admin/man_admin.php" class="btn">Admin Informations</a>
+				<a href="Admin/man_user.php" class="btn">User Information and Management</a>
 			<a href="logout_form.php" class="btn">Logout</a>
-			<a href="register_form.php" class="btn">Register</a>
+			
+
+		
 
 		</div>
 		
