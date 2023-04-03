@@ -75,36 +75,35 @@
 
 
                            
-                        //Query to Get all Admin
+                        
                         $select = "SELECT * FROM user_admin_info where user_type = 'user'";
-                        //Execute the Query
+                        
                         $result = mysqli_query($conn, $select);
 
-                        //CHeck whether the Query is Executed or Not
+                        
                         if($result==TRUE)
                         {
-                            // Count Rows to CHeck whether we have data in database or not
-                            $count = mysqli_num_rows($result); // Function to get all the rows in database
+                          
+                            $count = mysqli_num_rows($result); 
 
-                            $sn=1; //Create a Variable and Assign the value
+                            $sn=1; 
 
-                            //CHeck the num of rows
+                           
                             if($count > 0)
                             {
-                                //WE HAve data in database
+                                
                                 while($rows=mysqli_fetch_assoc($result))
                                 {
-                                    //Using While loop to get all the data from database.
-                                    //And while loop will run as long as we have data in database
+                                   
 
-                                    //Get individual DAta
+                                    
                                     $id=$rows['id'];
                                     $nid=$rows['nid'];
                                     $name=$rows['name'];
                                     $email=$rows['email'];
                                     $user_type=$rows['user_type'];
 
-                                    //Display the Values in our Table
+                                   
                                     ?>
                                     
                                     <tr>
