@@ -12,7 +12,7 @@
     $id = $_GET['id'];
 
     //2. Create SQL Query to Delete Admin
-    $sql = "DELETE FROM user_admin_info WHERE id=$id";
+    $sql = "DELETE FROM tbl_product WHERE id=$id";
 
     //Execute the Query
     $res = mysqli_query($conn, $sql);
@@ -23,18 +23,18 @@
         //Query Executed Successully and Admin Deleted
         //echo "Admin Deleted";
         //Create SEssion Variable to Display Message
-      $_SESSION['delete'] = "<div class='success'><b>User Deleted</div>";
+      $_SESSION['delete'] = "<div class='success'><b>Request Denied</div>";
         //Redirect to Manage Admin Page
         
-         header('location:../Admin/man_user.php');
+         header('location:../Admin/add-req.php');
     }
     else
     {
         //Failed to Delete Admin
         //echo "Failed to Delete Admin";
 
-        $_SESSION['delete'] = "<div class='error'>Failed to Delete User. Try Again Later.</div>";
-         header('location:../Admin/man_user.php');
+        $_SESSION['delete'] = "<div class='error'>Failed to Delete Admin. Try Again Later.</div>";
+         header('location:../Admin/add-req.php');
     }
 
     //3. Redirect to Manage Admin page with message (success/error)
