@@ -38,7 +38,7 @@
 }
 
 .tbl-full{
-    width: 80%;
+    width: 100%;
     text-align: center;
 }
 .tbl-30{
@@ -92,8 +92,10 @@ table tr td{
 
 
 .success{
-   color: crimson;
+   text-decoration-color: green;
+   color: green;
 }
 .error{
     color: red;
 }
+
