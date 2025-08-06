@@ -1,74 +1,50 @@
-# CSE327_C_to_C_Rent_and_Sell_Platform
-
 # C2C Rent and Sell Platform
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/FaysalMehrab/CSE327_C_to_C_Rent_and_Sell_Platform)
 
-A consumer-to-consumer (C2C) web application built with PHP and MySQL that allows users to post advertisements to rent or sell products. The platform features separate dashboards for users and administrators, with an approval system for registrations and advertisements.
+<p align="center">
+  <img alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"/>
+  <img alt="MySQL" src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+  <img alt="Project Status" src="https://img.shields.io/badge/status-complete-brightgreen?style=for-the-badge"/>
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge"/>
+</p>
 
-## Features
+<p align="center">
+  A comprehensive consumer-to-consumer (C2C) web application built with PHP and MySQL that allows users to post, browse, and manage advertisements for renting or selling products, all under a robust admin-managed system.
+</p>
 
-### User Features
-- **Registration & Login**: Secure user registration with an admin approval system.
-- **Profile Management**: Users can view and update their profile information.
-- **Post Advertisements**: Create and submit advertisements for products to be rented, sold, or both. Ads require admin approval before going live.
-- **Browse Products**: View a gallery of all approved and active products available for rent or sale.
-- **Search Functionality**: Search for specific products by title.
-- **Request to Buy/Rent**: Users can send requests to buy or rent items, which are then managed by an admin.
+<p align="center">
+  <img src="link-to-your-screenshot-or-gif.gif" alt="Platform Demo"/>
+</p>
 
-### Admin Features
-- **Admin Dashboard**: A central hub for all administrative tasks, including a total revenue display.
-- **Request Management**:
-    - **Registration Requests**: View, accept, or deny new user registration requests.
-    - **Advertisement Requests**: Approve or deny user-submitted product advertisements.
-    - **Buy/Rent Requests**: Manage and finalize user requests to buy or rent products.
-- **User Management**: View a list of all registered users and have the ability to delete user accounts.
-- **Admin Information**: View a list of all registered administrators.
-- **Category Management**: Add new product categories with associated images.
+---
 
-## Technology Stack
-- **Backend**: PHP
-- **Frontend**: HTML, CSS, JavaScript
-- **Database**: MySQL / MariaDB
+## 🚀 Key Features
 
-## Setup and Installation
+The platform is divided into two distinct experiences: a feature-rich dashboard for users and a powerful control panel for administrators.
 
-To run this project locally, you will need a local server environment like XAMPP or WAMP.
+### 👤 User Features
+*   **Secure Registration & Login:** A safe and secure registration process that requires **admin approval** to activate an account.
+*   **Profile Management:** Users can easily view and **update their profile** information at any time.
+*   **Post Advertisements:** A simple form to **create and submit advertisements** for products to be rented, sold, or both. Ads go live only after admin approval.
+*   **Browse & Search:** A clean gallery view to **browse all active products**, with a search bar to find items by title.
+*   **Request System:** Users can send formal **requests to buy or rent** items, initiating a transaction process managed by an admin.
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/faysalmehrab/cse327_c_to_c_rent_and_sell_platform.git
-    ```
+### ⚙️ Admin Features
+*   **Central Dashboard:** A comprehensive dashboard displaying key metrics, including **total revenue**.
+*   **Request Management:** Admins can manage three types of requests from a central location:
+    *   **Registration Requests:** View, **accept, or deny** new user registrations.
+    *   **Advertisement Requests:** **Approve or deny** user-submitted product ads.
+    *   **Buy/Rent Requests:** Manage and **finalize** user requests to buy or rent products.
+*   **User Management:** View a list of all registered users with the ability to **delete accounts**.
+*   **Category Management:** Easily **add new product categories** with associated images to keep the platform organized.
 
-2.  **Move to server directory:**
-    Place the cloned project folder into your local server's web root directory (e.g., `htdocs` for XAMPP).
+---
 
-3.  **Database Setup:**
-    -   Open phpMyAdmin or your preferred MySQL management tool.
-    -   Create a new database named `login_demo`.
-    -   Import the `login_demo.sql` file into the newly created database. This will set up the necessary tables and seed some initial admin data.
+## 🛠️ Technology Stack
 
-4.  **Database Configuration:**
-    The database connection is configured in `config.php`. The default settings are:
-    ```php
-    $conn = mysqli_connect('localhost','root', '', 'login_demo');
-    ```
-    If your local MySQL setup uses different credentials, update this file accordingly.
+*   **Backend:** **PHP**
+*   **Frontend:** **HTML, CSS, JavaScript**
+*   **Database:** **MySQL / MariaDB**
 
-5.  **Access the Application:**
-    -   Start your Apache and MySQL services.
-    -   Open your web browser and navigate to `http://localhost/cse327_c_to_c_rent_and_sell_platform/login_form.php`.
+---
 
-## Database Schema
-
-The application uses several tables to manage data:
-
--   `req_reg`: Stores pending user registration requests.
--   `user_admin_info`: Contains information for all approved users and admins.
--   `tbl_category`: Manages product categories.
--   `tbl_product`: Stores pending advertisement requests from users.
--   `tbl_final_add`: Holds all approved and active product advertisements that are visible to users.
--   `tbl_buy_rent`: Stores pending requests from users to buy or rent a product.
--   `tbl_buy_rent_con`: Stores confirmed and completed buy/rent transactions, used for calculating total revenue.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+## 🚀 Getting Started
